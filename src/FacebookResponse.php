@@ -181,7 +181,7 @@ class FacebookResponse
      *
      * @throws FacebookSDKException
      */
-    public function throwException(): never
+    public function throwException()
     {
         throw $this->thrownException;
     }
