@@ -520,7 +520,7 @@ class FacebookRequest
     public static function getDefaultHeaders()
     {
         return [
-            'User-Agent' => 'fb-php-' . Facebook::VERSION,
+            'User-Agent' => 'serafim/fb-php-' . Facebook::VERSION,
             'Accept-Encoding' => '*',
         ];
     }

@@ -72,7 +72,7 @@ class FacebookRedirectLoginHelperTest extends BaseTestCase
             'client_id' => '123',
             'redirect_uri' => self::REDIRECT_URL,
             'state' => $this->persistentDataHandler->get('state'),
-            'sdk' => 'php-sdk-' . Facebook::VERSION,
+            'sdk' => 'serafim/php-sdk-' . Facebook::VERSION,
             'scope' => implode(',', $scope),
         ];
         foreach ($params as $key => $value) {

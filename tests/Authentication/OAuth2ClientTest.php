@@ -93,7 +93,7 @@ class OAuth2ClientTest extends BaseTestCase
             'client_id' => '123',
             'redirect_uri' => 'https://foo.bar',
             'state' => 'foo_state',
-            'sdk' => 'php-sdk-' . Facebook::VERSION,
+            'sdk' => 'serafim/php-sdk-' . Facebook::VERSION,
             'scope' => implode(',', $scope),
             'foo' => 'bar',
         ];

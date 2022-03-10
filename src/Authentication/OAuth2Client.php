@@ -120,7 +120,7 @@ class OAuth2Client
             'client_id' => $this->app->getId(),
             'state' => $state,
             'response_type' => 'code',
-            'sdk' => 'php-sdk-' . Facebook::VERSION,
+            'sdk' => 'serafim/php-sdk-' . Facebook::VERSION,
             'redirect_uri' => $redirectUrl,
             'scope' => implode(',', $scope)
         ];
