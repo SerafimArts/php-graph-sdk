@@ -61,10 +61,7 @@ class FacebookGuzzleHttpClient implements FacebookHttpClientInterface
             'verify' => __DIR__ . '/certs/DigiCertHighAssuranceEVRootCA.pem',
         ];
 
-        $request = \method_exists($this->guzzleClient, 'createRequest')
-            ? $this->guzzleClient->createRequest($method, $url, $options)
-            : new Request($method, $url, $headers, $body)
-        ;
+        $request = $this->guzzleClient->createRequest($method, $url, $options);
 
         try {
             $rawResponse = $this->guzzleClient->send($request);
