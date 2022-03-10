@@ -83,7 +83,7 @@ class OAuth2Client
      *
      * @return AccessTokenMetadata
      */
-    public function debugToken(\Facebook\Authentication\AccessToken|string $accessToken)
+    public function debugToken(AccessToken|string $accessToken)
     {
         $accessToken = $accessToken instanceof AccessToken ? $accessToken->getValue() : $accessToken;
         $params = ['input_token' => $accessToken];
@@ -156,7 +156,7 @@ class OAuth2Client
      * @return AccessToken
      * @throws FacebookSDKException
      */
-    public function getLongLivedAccessToken(\Facebook\Authentication\AccessToken|string $accessToken)
+    public function getLongLivedAccessToken(AccessToken|string $accessToken)
     {
         $accessToken = $accessToken instanceof AccessToken ? $accessToken->getValue() : $accessToken;
         $params = [
@@ -175,7 +175,7 @@ class OAuth2Client
      * @return AccessToken
      * @throws FacebookSDKException
      */
-    public function getCodeFromLongLivedAccessToken(\Facebook\Authentication\AccessToken|string $accessToken, $redirectUri = '')
+    public function getCodeFromLongLivedAccessToken(AccessToken|string $accessToken, $redirectUri = '')
     {
         $params = [
             'redirect_uri' => $redirectUri,

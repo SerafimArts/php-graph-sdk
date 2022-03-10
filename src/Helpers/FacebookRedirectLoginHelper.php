@@ -147,7 +147,7 @@ class FacebookRedirectLoginHelper
      *
      * @throws FacebookSDKException
      */
-    public function getLogoutUrl(\Facebook\Authentication\AccessToken|string $accessToken, $next, $separator = '&')
+    public function getLogoutUrl(AccessToken|string $accessToken, $next, $separator = '&')
     {
         if (!$accessToken instanceof AccessToken) {
             $accessToken = new AccessToken($accessToken);

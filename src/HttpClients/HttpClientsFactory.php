@@ -40,7 +40,8 @@ class HttpClientsFactory
      * @param FacebookHttpClientInterface|Client|string|null $handler
      *
      * @throws Exception                If the cURL extension or the Guzzle client aren't available (if required).
-     * @throws InvalidArgumentException If the http client handler isn't "curl", "stream", "guzzle", or an instance of Facebook\HttpClients\FacebookHttpClientInterface.
+     * @throws InvalidArgumentException If the http client handler isn't "curl", "stream", "guzzle", or an instance
+     *         of {@see \Facebook\HttpClients\FacebookHttpClientInterface}.
      *
      * @return FacebookHttpClientInterface
      */

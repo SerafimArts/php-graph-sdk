@@ -23,6 +23,7 @@
  */
 namespace Facebook\Helpers;
 
+use Facebook\Exceptions\FacebookSDKException;
 use Facebook\Facebook;
 use Facebook\FacebookApp;
 use Facebook\FacebookClient;
@@ -83,7 +84,7 @@ abstract class FacebookSignedRequestFromInputHelper
      *
      * @return AccessToken|null
      *
-     * @throws \Facebook\Exceptions\FacebookSDKException
+     * @throws FacebookSDKException
      */
     public function getAccessToken()
     {
