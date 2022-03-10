@@ -28,6 +28,7 @@ use Facebook\Exceptions\FacebookSDKException;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Ring\Exception\RingException;
 use GuzzleHttp\Exception\RequestException;
 use Psr\Http\Message\ResponseInterface as PsrResponseInterface;
@@ -59,7 +60,11 @@ class FacebookGuzzleHttpClient implements FacebookHttpClientInterface
             'connect_timeout' => 10,
             'verify' => __DIR__ . '/certs/DigiCertHighAssuranceEVRootCA.pem',
         ];
-        $request = $this->guzzleClient->createRequest($method, $url, $options);
+
+        $request = \method_exists($this->guzzleClient, 'createRequest')
+            ? $this->guzzleClient->createRequest($method, $url, $options)
+            : new Request($method, $url, $headers, $body)
+        ;
 
         try {
             $rawResponse = $this->guzzleClient->send($request);
