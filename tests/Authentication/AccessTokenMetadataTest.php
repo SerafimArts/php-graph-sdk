@@ -91,6 +91,8 @@ class AccessTokenMetadataTest extends BaseTestCase
 
     public function testAnExpectedAppIdWillNotThrow(): void
     {
+        $this->expectNotToPerformAssertions();
+
         $metadata = new AccessTokenMetadata($this->graphResponseData);
         $metadata->validateAppId('123');
     }
@@ -105,6 +107,8 @@ class AccessTokenMetadataTest extends BaseTestCase
 
     public function testAnExpectedUserIdWillNotThrow(): void
     {
+        $this->expectNotToPerformAssertions();
+
         $metadata = new AccessTokenMetadata($this->graphResponseData);
         $metadata->validateUserId('1337');
     }
@@ -119,6 +123,8 @@ class AccessTokenMetadataTest extends BaseTestCase
 
     public function testAnActiveAccessTokenWillNotThrow(): void
     {
+        $this->expectNotToPerformAssertions();
+
         $this->graphResponseData['data']['expires_at'] = time() + 1000;
         $metadata = new AccessTokenMetadata($this->graphResponseData);
         $metadata->validateExpiration();

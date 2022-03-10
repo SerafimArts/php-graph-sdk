@@ -182,6 +182,8 @@ class FacebookBatchRequestTest extends BaseTestCase
 
     public function testLessOrEqualThanFiftyRequestsWillNotThrow()
     {
+        $this->expectNotToPerformAssertions();
+
         $batchRequest = $this->createBatchRequest();
 
         $this->createAndAppendRequestsTo($batchRequest, 50);

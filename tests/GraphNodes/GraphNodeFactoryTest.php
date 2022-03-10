@@ -52,6 +52,8 @@ class GraphNodeFactoryTest extends BaseTestCase
 
     public function testAValidGraphNodeResponseWillNotThrow()
     {
+        $this->expectNotToPerformAssertions();
+
         $data = '{"id":"123","name":"foo"}';
         $res = new FacebookResponse($this->request, $data);
 
@@ -71,6 +73,8 @@ class GraphNodeFactoryTest extends BaseTestCase
 
     public function testAValidGraphEdgeResponseWillNotThrow()
     {
+        $this->expectNotToPerformAssertions();
+
         $data = '{"data":[{"id":"123","name":"foo"},{"id":"1337","name":"bar"}]}';
         $res = new FacebookResponse($this->request, $data);
 
@@ -107,6 +111,8 @@ class GraphNodeFactoryTest extends BaseTestCase
 
     public function testValidSubClassesWillNotThrow()
     {
+        $this->expectNotToPerformAssertions();
+
         GraphNodeFactory::validateSubclass('\Facebook\GraphNodes\GraphNode');
         GraphNodeFactory::validateSubclass('\Facebook\GraphNodes\GraphAlbum');
         GraphNodeFactory::validateSubclass('\Facebook\Tests\Fixtures\MyFooGraphNode');

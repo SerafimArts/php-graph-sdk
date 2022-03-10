@@ -1,9 +1,9 @@
 {
-    "name": "nickdnk/graph-sdk",
-    "description": "Facebook SDK for PHP compatible with PHP8",
+    "name": "serafim/graph-sdk",
+    "description": "Facebook SDK for PHP compatible with PHP 8.1",
     "keywords": ["facebook", "sdk"],
     "type": "library",
-    "homepage": "https://github.com/nickdnk/php-graph-sdk",
+    "homepage": "https://github.com/SerafimArts/php-graph-sdk",
     "license": "proprietary",
     "authors": [
         {
@@ -12,25 +12,39 @@
         }
     ],
     "require": {
-        "php": "^7.3 || ^8.0"
+        "php": "^8.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "~9.2",
-        "mockery/mockery": "~1.3",
-        "guzzlehttp/guzzle": "~5.0"
+        "vimeo/psalm": "^4.22",
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.3",
+        "guzzlehttp/guzzle": "^7.0",
+        "rector/rector": "^0.12"
     },
     "autoload": {
         "psr-4": {
-            "Facebook\\": "src/Facebook/"
+            "Facebook\\": "src"
         },
-        "files": ["src/Facebook/polyfills.php"]
+        "files": [
+            "src/polyfills.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Facebook\\Tests\\": "tests/"
+            "Facebook\\Tests\\": "tests"
         }
     },
     "replace": {
         "facebook/graph-sdk": ">=5.7.0"
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

@@ -2,7 +2,13 @@
 
 Starting with version 5, the Facebook PHP SDK follows [SemVer](http://semver.org/).
 
-## 6.x (UNOFFICIAL)
+## 7.x (By ifynny/php-graph-sdk)
+ - 7.0.0
+   - Add full compatibility with PHP 8.1
+   - Actualize dependencies (guzzle, phpunit)
+   - Fix tests
+
+## 6.x (By nickdnk/php-graph-sdk)
  - 6.0.1
    - Added `replace` property to `composer.json`
  - 6.0.0

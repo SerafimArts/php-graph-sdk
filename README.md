@@ -1,19 +1,26 @@
-# Facebook SDK for PHP (v6)
+# Facebook SDK for PHP
 
-[![Build Status](https://api.travis-ci.com/nickdnk/php-graph-sdk.svg)](https://travis-ci.com/github/nickdnk/php-graph-sdk)
-[![Latest Stable Version](http://img.shields.io/badge/Latest%20Stable-6.0.1-blue.svg)](https://packagist.org/packages/nickdnk/graph-sdk)
+<p align="center">
+    <a href="https://github.com/SerafimArts/php-graph-sdk/actions"><img src="https://github.com/SerafimArts/php-graph-sdk/workflows/build/badge.svg"></a>
+    <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://img.shields.io/badge/PHP-8.1.0-ff0140.svg"></a>
+    <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://poser.pugx.org/serafim/graph-sdk/version" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://poser.pugx.org/serafim/graph-sdk/v/unstable" alt="Latest Unstable Version"></a>
+    <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://poser.pugx.org/serafim/graph-sdk/downloads" alt="Total Downloads"></a>
+    <a href="https://raw.githubusercontent.com/SerafimArts/php-graph-sdk/master/LICENSE"><img src="https://poser.pugx.org/serafim/graph-sdk/license"></a>
+</p>
 
-# WARNING: THIS IS A CUSTOM RELEASE COMPATIBLE WITH PHP 8.
-## PHP 7.3 or 8.0 is required.
+> WARNING: THIS IS A CUSTOM RELEASE COMPATIBLE WITH PHP 8.1
 
-This repository contains the open source PHP SDK that allows you to access the Facebook Platform from your PHP app.
+This repository contains the open source PHP SDK that allows you to access 
+the Facebook Platform from your PHP app.
 
 ## Installation
 
-The Facebook PHP SDK can be installed with [Composer](https://getcomposer.org/). Run this command:
+The Facebook PHP SDK can be installed with [Composer](https://getcomposer.org/). 
+Run this command:
 
 ```sh
-composer require nickdnk/graph-sdk
+composer require serafim/graph-sdk
 ```
 
 Please be aware, that there are issues when using the Facebook SDK together with [Guzzle](https://github.com/guzzle/guzzle) 6.x. php-graph-sdk v5.x only works with Guzzle 5.x out of the box. However, [there is a workaround to make it work with Guzzle 6.x](https://www.sammyk.me/how-to-inject-your-own-http-client-in-the-facebook-php-sdk-v5#writing-a-guzzle-6-http-client-implementation-from-scratch).
