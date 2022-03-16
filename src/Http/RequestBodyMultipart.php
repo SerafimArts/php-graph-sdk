@@ -39,14 +39,14 @@ class RequestBodyMultipart implements RequestBodyInterface
     /**
      * @var string The boundary.
      */
-    private readonly string $boundary;
+    private string $boundary;
 
     /**
      * @param array  $params   The parameters to send with this request.
      * @param array  $files    The files to send with this request.
      * @param string $boundary Provide a specific boundary.
      */
-    public function __construct(private readonly array $params = [], private readonly array $files = [], $boundary = null)
+    public function __construct(private array $params = [], private array $files = [], $boundary = null)
     {
         $this->boundary = $boundary ?: uniqid();
     }

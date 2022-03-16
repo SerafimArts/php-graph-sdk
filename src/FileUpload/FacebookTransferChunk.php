@@ -36,7 +36,7 @@ class FacebookTransferChunk
      * @param int $startOffset
      * @param int $endOffset
      */
-    public function __construct(private readonly FacebookFile $file, private $uploadSessionId, private $videoId, private $startOffset, private $endOffset)
+    public function __construct(private FacebookFile $file, private $uploadSessionId, private $videoId, private $startOffset, private $endOffset)
     {
     }
 
