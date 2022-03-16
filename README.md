@@ -2,14 +2,14 @@
 
 <p align="center">
     <a href="https://github.com/SerafimArts/php-graph-sdk/actions"><img src="https://github.com/SerafimArts/php-graph-sdk/workflows/build/badge.svg"></a>
-    <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://img.shields.io/badge/PHP-8.1.0-ff0140.svg"></a>
+    <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://img.shields.io/badge/PHP-8.0+-ff0140.svg"></a>
     <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://poser.pugx.org/serafim/graph-sdk/version" alt="Latest Stable Version"></a>
     <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://poser.pugx.org/serafim/graph-sdk/v/unstable" alt="Latest Unstable Version"></a>
     <a href="https://packagist.org/packages/serafim/graph-sdk"><img src="https://poser.pugx.org/serafim/graph-sdk/downloads" alt="Total Downloads"></a>
     <a href="https://raw.githubusercontent.com/SerafimArts/php-graph-sdk/master/LICENSE"><img src="https://poser.pugx.org/serafim/graph-sdk/license"></a>
 </p>
 
-> WARNING: THIS IS A CUSTOM RELEASE COMPATIBLE WITH PHP 8.1
+> WARNING: THIS IS A CUSTOM RELEASE COMPATIBLE WITH PHP 8.0+
 
 This repository contains the open source PHP SDK that allows you to access 
 the Facebook Platform from your PHP app.
