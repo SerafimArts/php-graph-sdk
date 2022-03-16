@@ -44,7 +44,7 @@ class FacebookRedirectLoginHelper
     /**
      * @const int The length of CSRF string to validate the login link.
      */
-    final const CSRF_LENGTH = 32;
+    const CSRF_LENGTH = 32;
 
     /**
      * @var UrlDetectionInterface The URL detection handler.

@@ -41,7 +41,7 @@ class OAuth2Client
     /**
      * @const string The base authorization URL.
      */
-    final const BASE_AUTHORIZATION_URL = 'https://www.facebook.com';
+    const BASE_AUTHORIZATION_URL = 'https://www.facebook.com';
 
     /**
      * The version of the Graph API to use.

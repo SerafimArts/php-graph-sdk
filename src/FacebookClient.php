@@ -38,37 +38,37 @@ class FacebookClient
     /**
      * @const string Production Graph API URL.
      */
-    final const BASE_GRAPH_URL = 'https://graph.facebook.com';
+    const BASE_GRAPH_URL = 'https://graph.facebook.com';
 
     /**
      * @const string Graph API URL for video uploads.
      */
-    final const BASE_GRAPH_VIDEO_URL = 'https://graph-video.facebook.com';
+    const BASE_GRAPH_VIDEO_URL = 'https://graph-video.facebook.com';
 
     /**
      * @const string Beta Graph API URL.
      */
-    final const BASE_GRAPH_URL_BETA = 'https://graph.beta.facebook.com';
+    const BASE_GRAPH_URL_BETA = 'https://graph.beta.facebook.com';
 
     /**
      * @const string Beta Graph API URL for video uploads.
      */
-    final const BASE_GRAPH_VIDEO_URL_BETA = 'https://graph-video.beta.facebook.com';
+    const BASE_GRAPH_VIDEO_URL_BETA = 'https://graph-video.beta.facebook.com';
 
     /**
      * @const int The timeout in seconds for a normal request.
      */
-    final const DEFAULT_REQUEST_TIMEOUT = 60;
+    const DEFAULT_REQUEST_TIMEOUT = 60;
 
     /**
      * @const int The timeout in seconds for a request that contains file uploads.
      */
-    final const DEFAULT_FILE_UPLOAD_REQUEST_TIMEOUT = 3600;
+    const DEFAULT_FILE_UPLOAD_REQUEST_TIMEOUT = 3600;
 
     /**
      * @const int The timeout in seconds for a request that contains video uploads.
      */
-    final const DEFAULT_VIDEO_UPLOAD_REQUEST_TIMEOUT = 7200;
+    const DEFAULT_VIDEO_UPLOAD_REQUEST_TIMEOUT = 7200;
 
     /**
      * @var FacebookHttpClientInterface HTTP client handler.

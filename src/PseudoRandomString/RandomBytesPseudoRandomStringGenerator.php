@@ -32,7 +32,7 @@ class RandomBytesPseudoRandomStringGenerator implements PseudoRandomStringGenera
     /**
      * @const string The error message when generating the string fails.
      */
-    final const ERROR_MESSAGE = 'Unable to generate a cryptographically secure pseudo-random string from random_bytes(). ';
+    const ERROR_MESSAGE = 'Unable to generate a cryptographically secure pseudo-random string from random_bytes(). ';
 
     /**
      * @throws FacebookSDKException
